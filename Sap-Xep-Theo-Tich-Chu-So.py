@@ -1,7 +1,7 @@
-def sum(n):
-    s=0
+def prod(n):
+    s=1
     while(n>0):
-        s+=n%10
+        s*=n%10
         n//=10
     return s
 def swap(list,a,b):
@@ -16,7 +16,7 @@ while t>0:
     a = list(map(int, input().strip().split()))[:n]
     b=[]
     for i in range(n):
-        b.append(sum(a[i]))
+        b.append(prod(a[i]))
 
     for i in range(n-1):
         for j in range(i+1,n):

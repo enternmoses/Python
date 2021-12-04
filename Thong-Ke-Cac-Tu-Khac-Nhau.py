@@ -1,5 +1,5 @@
 import re
-[n,k]=[int (x) for x in input().split()]
+n=int(input())
 string= ''
 while n>0:
     a = input()
@@ -17,5 +17,4 @@ for i in string:
 sort_orders = sorted(count.items(), key=lambda x: x[1], reverse=True)
 
 for i in sort_orders:
-    if i[1]>=k:
-        print(i[0], i[1])
+    print(i[0], i[1])

@@ -1,0 +1,12 @@
+# Read a string:
+s = input()
+# Print a string:
+# print(s)
+f = s.find('h')
+l = s.rfind('h')
+
+s1=s[::-1]
+f1 = s1.find('h')
+l1 = s1.rfind('h')
+
+print(s[0:f+1],s1[f1+1:l1],s[l:len(s)],sep='')
